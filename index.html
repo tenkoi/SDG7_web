@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 7: Affordable and Clean Energy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="glass">
+        <div class="logo">SDG 7 Initiative</div>
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#initiatives" class="nav-link">Initiatives</a></li>
+            <li><a href="#calculator" class="nav-link">Calculator</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero glass">
+        <h1>SDG 7: Affordable and Clean Energy</h1>
+        <p>Ensure access to affordable, reliable, sustainable, and modern energy for all.</p>
+        <img src="https://picsum.photos/seed/energy-hero/1200/600" alt="Clean Energy">
+    </section>
+
+    <section id="about" class="about">
+        <div class="glass card">
+            <h2>About SDG 7</h2>
+            <p>Sustainable Development Goal 7 aims to provide universal access to clean energy, increase renewable energy use, and improve energy efficiency by 2030.</p>
+            <div class="about-grid">
+                <div class="about-item glass">
+                    <img src="https://picsum.photos/seed/solar-energy/400/300" alt="Solar Energy">
+                    <h3>Solar Energy</h3>
+                    <p>Harnessing solar power to provide clean electricity to communities.</p>
+                </div>
+                <div class="about-item glass">
+                    <img src="https://picsum.photos/seed/energy-efficiency/400/300" alt="Energy Efficiency">
+                    <h3>Energy Efficiency</h3>
+                    <p>Promoting technologies to reduce energy waste in homes and industries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="initiatives" class="initiatives">
+        <h2>Our Initiatives</h2>
+        <div class="carousel glass">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="https://picsum.photos/seed/wind-energy/800/400" alt="Wind Energy">
+                    <h3>Wind Energy Projects</h3>
+                    <p>Building wind farms to generate sustainable electricity.</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://picsum.photos/seed/microgrids/800/400" alt="Microgrids">
+                    <h3>Community Microgrids</h3>
+                    <p>Creating localized energy grids for rural areas.</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://picsum.photos/seed/energy-access/800/400" alt="Energy Access">
+                    <h3>Energy Access Programs</h3>
+                    <p>Providing off-grid solutions to underserved communities.</p>
+                </div>
+            </div>
+            <button class="carousel-btn prev-btn">❮</button>
+            <button class="carousel-btn next-btn">❯</button>
+        </div>
+        <div class="dashboard glass">
+            <h3>Energy Consumption Stats</h3>
+            <canvas id="energyChart"></canvas>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator">
+        <div class="glass card">
+            <h2>Solar Panel Calculator</h2>
+            <p>Estimate the number of solar panels needed for your home.</p>
+            <form id="solarForm">
+                <label>
+                    Monthly Energy Usage (kWh):
+                    <input type="number" id="energyUsage" min="0" required>
+                </label>
+                <label>
+                    Average Sunlight Hours/Day:
+                    <input type="number" id="sunlightHours" min="0" step="0.1" required>
+                </label>
+                <label>
+                    Panel Wattage (W):
+                    <input type="number" id="panelWattage" min="0" required>
+                </label>
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="result" class="result"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="glass card">
+            <h2>Contact Us</h2>
+            <p>Join us in promoting clean energy. Get in touch to collaborate.</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <img src="https://picsum.photos/seed/energy-contact/600/400" alt="Contact">
+        </div>
+    </section>
+
+    <footer class="glass">
+        <p>© 2025 SDG 7 Initiative. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
